@@ -68,9 +68,9 @@ O projeto deveria apresentar um modal para uma assinatura (de algum tipo de plan
   }
 ```
 
-> O watermelon DB associa um id para cada entrada de forma automática, portanto não foi nescessário criar esse campo.
+> O watermelon DB associa um id para cada entrada de forma automática, portanto não foi nescessário criar essa coluna.
 
-- Como não existia nenhum tipo de cadastro prévio na aplicação, após cada assinatura um novo usuário é gerado e registrado no DB com o campo `assigned` como `true`.
+- Como não existia nenhum tipo de cadastro prévio na aplicação, após cada assinatura um novo usuário é gerado e registrado na tabelacom o campo `assigned` como `true`.
 
 - Após a assinatura o usuário é redirecionado para a tela principal e o status de sua assinatura, assim como o banco de dados atualizado é armazenado no estado global da aplicação.
 
