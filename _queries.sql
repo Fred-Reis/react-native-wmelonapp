@@ -1,3 +1,12 @@
+CREATE TABLE usuarios (
+  id int,
+  nome varchar(255),
+  email varchar(255),
+  password varchar(255),
+  hora_de_criacao varchar(255),
+  hora_de_atualizacao varchar(255)
+);
+
 INSERT INTO usuarios (
   id,
   nome,
