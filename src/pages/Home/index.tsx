@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Modal } from 'react-native';
 
 import {
   Container,
@@ -15,9 +16,11 @@ import { CustomModal } from '../../components/Modal';
 
 import { useStore } from '../../storage/users.storage';
 import { Button } from '../../components/Button';
+import { List } from '../List';
 
 export const Home = () => {
   const [modalVisible, setModalVisible] = useState(false);
+  const [listVisible, setListVisible] = useState(false);
 
   const setAssignment = useStore(state => state.setAssignment);
   const resetAssigned = useStore(state => state.resetAssigned);
@@ -43,10 +46,17 @@ export const Home = () => {
         handleClose={toggleModal}
         handleSign={handleAssign}
       />
+
+      <Modal visible={listVisible} animationType="fade">
+        <List toggle={() => setListVisible(oldState => !oldState)} />
+      </Modal>
+
       <Title>Configurações</Title>
       <UpgradeButton onPress={toggleModal} disabled={assigned}>
         <ArrowsImage source={updateArrows} />
-        <ButtonText>Faça Upgrade agora</ButtonText>
+        <ButtonText>
+          {assigned ? 'Você já fez o upgrade' : 'Faça Upgrade agora'}
+        </ButtonText>
       </UpgradeButton>
 
       {users.length > 0 && (
@@ -56,7 +66,10 @@ export const Home = () => {
               ? 'Agradeçemos pela assinatura, que tal ver quem também já assinou?'
               : 'Que tal conhecer nossos assinantes?'}
           </Message>
-          <Button title="Veja a lista de assinantes" onpress={() => {}} />
+          <Button
+            title="Veja a lista de assinantes"
+            onpress={() => setListVisible(oldState => !oldState)}
+          />
         </>
       )}
 

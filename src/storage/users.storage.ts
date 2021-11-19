@@ -21,19 +21,6 @@ export const useStore = create<StoreType>(set => ({
 
     const { user, users } = result;
 
-    console.log('result', user._raw.assigned);
-
-    console.log(
-      'result map',
-      [...users._cache.map].map((el: any) => {
-        return {
-          id: el[0],
-          assigned: el[1].assigned,
-          createdAt: new Date(el[1].createdAt).toLocaleString('pt-BR'),
-        };
-      }),
-    );
-
     set({
       users: await [...users._cache.map].map((el: any) => {
         return {
@@ -43,6 +30,7 @@ export const useStore = create<StoreType>(set => ({
         };
       }),
     });
+
     set({ assigned: await user._raw.assigned });
   },
 

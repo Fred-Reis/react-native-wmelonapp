@@ -15,7 +15,7 @@ export const Title = styled.Text`
   font-weight: bold;
   margin-bottom: 50px;
   color: #43505c;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
 `;
 
 export const Message = styled.Text`
@@ -28,8 +28,8 @@ export const Message = styled.Text`
 
 export const UpgradeButton = styled.TouchableOpacity`
   flex-direction: row;
-  width: 60%;
-  justify-content: space-around;
+  width: 65%;
+  justify-content: space-between;
   padding: 10px;
 `;
 
