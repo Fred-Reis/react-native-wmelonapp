@@ -32,6 +32,15 @@
 <br/>
 
 <h4 align="center">
+ ⚠️ 🚨 🚧 <a alt="Frederico Reis" href="https://github.com/Fred-Reis/react-native-wmelonapp/raw/main/android/app/build/outputs/apk/release/app-release.apk"> download the release.apk file to test on your device here</a> 🚧 🚨 ⚠️
+</h4>
+
+
+<br/>
+
+<br/>
+
+<h4 align="center">
 😃  <strong>BE HAPPY!</strong>
 </h4>
 
