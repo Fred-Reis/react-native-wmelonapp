@@ -1,13 +1,13 @@
-<!-- <div align="center" style="margin-bottom:10px">
+<div align="center" style="margin-bottom:10px">
   <img alt="Get Recipes"
-    src="src/assets/logo.png"
+    src="src/assets/jobs.png"
   />
 
 </div>
 
 <h2 align="center" style="margin:50px">
-   Care Recipient Dashboard
-</h2> -->
+   Jobs Assign
+</h2>
 
 <div align="center">
 
@@ -25,16 +25,40 @@
 
 <br/>
 
-<h4 align="center">
-  🚧  Project README  🚀  under construction...  🚧
-</h4>
+<p align="center">
+  <a href="#sobre">Sobre</a> &nbsp;&nbsp;
+  <a href="#desafio">Desafio</a> &nbsp;&nbsp;
+  <a href="#tecnologias-e-bibliotecas">Tecnologias e Bibliotecas</a> &nbsp;&nbsp;
+  <a href="#demo">Demo</a> &nbsp;&nbsp;
+  <a href="#baixando-e-instalando">Baixando e instalando</a> &nbsp;&nbsp;
+  <a href="#autor">Autor</a>
+</p>
+
+<br/>
+
+# 🚨 Sobre
+
+<br/>
+
+# 🚨 Desafio
+
+<br/>
+
+# 🚨 Tecnologias e Bibliotecas
+
+<br/>
+
+# 🚨 Demo
+
+<br/>
+
+# 🚨 Baixando e instalando
 
 <br/>
 
 <h4 align="center">
- ⚠️ 🚨 🚧 <a alt="Frederico Reis" href="https://github.com/Fred-Reis/react-native-wmelonapp/raw/main/android/app/build/outputs/apk/release/app-release.apk"> download the release.apk file to test on your device here</a> 🚧 🚨 ⚠️
+ ⚠️ &nbsp;&nbsp;🚨 &nbsp;&nbsp;🚧 &nbsp;&nbsp;<a alt="Frederico Reis" href="https://github.com/Fred-Reis/react-native-wmelonapp/raw/main/android/app/build/outputs/apk/release/app-release.apk"> download the release.apk file to test on your device here</a> &nbsp;&nbsp;🚧 &nbsp;&nbsp;🚨 &nbsp;&nbsp;⚠️
 </h4>
-
 
 <br/>
 
@@ -50,7 +74,9 @@
 
 <br/>
 
----
+# 🚨 Autor
+
+<br/>
 
 <h3 align="center">
 Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a>
@@ -66,3 +92,7 @@ Author: <a alt="Fred-Reis" href="https://github.com/Fred-Reis">Frederico Reis</a
 </p>
 
 Made with ♥️ 2021
+
+<!-- <h4 align="center">
+  🚧 &nbsp;&nbsp; Project README &nbsp;&nbsp; 🚀  &nbsp;&nbsp;under construction... &nbsp;&nbsp; 🚧
+</h4> -->
