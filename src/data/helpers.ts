@@ -1,14 +1,21 @@
 import { database } from './database';
 
-export type User = {
+export type UserProps = {
   assigned: boolean;
 };
 
-const users = database.get('users');
+export const newAssigning = async ({ assigned }: UserProps) => {
+  return await database.write(async () => {
+    const users = database.collections.get('users');
 
-export const observeUsers = () => users.query().observe();
-export const saveUser = async ({ assigned }: User) => {
-  await users.create((entry: any) => {
-    entry.assigned = assigned;
+    try {
+      const user = await users.query().collection.create((entry: any) => {
+        entry.assigned = assigned;
+      });
+
+      return { user, users };
+    } catch (err) {
+      console.error('ERROR', err);
+    }
   });
 };

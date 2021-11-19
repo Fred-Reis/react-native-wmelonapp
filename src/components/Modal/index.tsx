@@ -10,13 +10,12 @@ import {
   Strong,
   CloseContainer,
   CloseButton,
-  SignButton,
-  SignText,
   FooterText,
 } from './styles';
 
 import jobs from '../../assets/jobs.png';
 import fechar from '../../assets/fechar.png';
+import { Button } from '../Button';
 
 interface Props extends ModalProps {
   visible: boolean;
@@ -53,9 +52,7 @@ export const CustomModal = ({
               Assine por <Strong> R$ 299,90 por ano</Strong> (R$ 24,90 por mês)
             </Message>
 
-            <SignButton onPress={handleSign}>
-              <SignText>Assine agora</SignText>
-            </SignButton>
+            <Button title="Assine agora" onpress={handleSign} />
           </Content>
         </TouchableWithoutFeedback>
         <FooterText>

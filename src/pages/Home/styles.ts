@@ -5,15 +5,25 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  padding: 30px;
 `;
 
 export const Title = styled.Text`
   font-size: 28px;
+  text-align: center;
   line-height: 33px;
   font-weight: bold;
   margin-bottom: 50px;
   color: #43505c;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+`;
+
+export const Message = styled.Text`
+  font-size: 18px;
+  text-align: center;
+  margin: 20px;
+  color: #43505c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
 `;
 
 export const UpgradeButton = styled.TouchableOpacity`

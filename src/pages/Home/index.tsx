@@ -1,4 +1,3 @@
-import { saveUser, observeUsers } from '../../data/helpers';
 import React, { useState } from 'react';
 
 import {
@@ -7,37 +6,68 @@ import {
   ArrowsImage,
   UpgradeButton,
   ButtonText,
+  Message,
 } from './styles';
 
 import updateArrows from '../../assets/update-arrows.png';
+
 import { CustomModal } from '../../components/Modal';
 
-const userSafe = async () => {
-  await saveUser({ assigned: false });
-};
-// const observe = () => {
-//   const ob = observeUsers();
-//   console.log(ob.);
-// };
+import { useStore } from '../../storage/users.storage';
+import { Button } from '../../components/Button';
 
 export const Home = () => {
   const [modalVisible, setModalVisible] = useState(false);
 
+  const setAssignment = useStore(state => state.setAssignment);
+  const resetAssigned = useStore(state => state.resetAssigned);
+  const assigned = useStore(state => state.assigned);
+  const users = useStore(state => state.users);
+
   const toggleModal = () => {
     setModalVisible(oldState => !oldState);
   };
+
+  const handleAssign = () => {
+    setAssignment(true).then(_res =>
+      setTimeout(() => {
+        toggleModal();
+      }, 450),
+    );
+  };
+
   return (
     <Container>
       <CustomModal
         visible={modalVisible}
         handleClose={toggleModal}
-        handleSign={userSafe}
+        handleSign={handleAssign}
       />
       <Title>Configurações</Title>
-      <UpgradeButton onPress={toggleModal}>
+      <UpgradeButton onPress={toggleModal} disabled={assigned}>
         <ArrowsImage source={updateArrows} />
         <ButtonText>Faça Upgrade agora</ButtonText>
       </UpgradeButton>
+
+      {users.length > 0 && (
+        <>
+          <Message>
+            {assigned
+              ? 'Agradeçemos pela assinatura, que tal ver quem também já assinou?'
+              : 'Que tal conhecer nossos assinantes?'}
+          </Message>
+          <Button title="Veja a lista de assinantes" onpress={() => {}} />
+        </>
+      )}
+
+      {assigned && (
+        <>
+          <Message>
+            Mas se preferir pode assinar novamente como outro usuário
+          </Message>
+          <Button title="Assinar Novamente" onpress={resetAssigned} />
+        </>
+      )}
     </Container>
   );
 };
