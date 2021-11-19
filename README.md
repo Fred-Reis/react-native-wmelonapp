@@ -26,12 +26,12 @@
 <br/>
 
 <p align="center">
-  <a href="#sobre">Sobre</a> &nbsp;&nbsp;
-  <a href="#desafio">Desafio</a> &nbsp;&nbsp;
-  <a href="#tecnologias-e-bibliotecas">Tecnologias e Bibliotecas</a> &nbsp;&nbsp;
-  <a href="#demo">Demo</a> &nbsp;&nbsp;
-  <a href="#baixando-e-instalando">Baixando e instalando</a> &nbsp;&nbsp;
-  <a href="#autor">Autor</a>
+  <a href="#-sobre">Sobre</a> &nbsp;&nbsp;
+  <a href="#-desafio">Desafio</a> &nbsp;&nbsp;
+  <a href="#-tecnologias-e-bibliotecas">Tecnologias e Bibliotecas</a> &nbsp;&nbsp;
+  <a href="#-demo">Demo</a> &nbsp;&nbsp;
+  <a href="#-baixando-e-instalando">Baixando e instalando</a> &nbsp;&nbsp;
+  <a href="#-autor">Autor</a>
 </p>
 
 <br/>
