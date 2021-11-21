@@ -176,7 +176,7 @@ $ yarn <plataforma-escolhida>
 
 <br/>
 
-# 🚨 Autor
+# 👨🏻‍🏫 Autor
 
 <br/>
 
