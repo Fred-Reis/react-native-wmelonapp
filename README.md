@@ -103,7 +103,7 @@ O projeto deveria apresentar um modal para uma assinatura (de algum tipo de plan
 </h1>
 
 <h4 align="center">
- ⚠️ &nbsp;&nbsp;🚨 &nbsp;&nbsp;🚧 &nbsp;&nbsp;<a alt="Frederico Reis" href="https://github.com/Fred-Reis/react-native-wmelonapp/raw/main/android/app/build/outputs/apk/release/app-release.apk"> download the release.apk file to test on your device here</a> &nbsp;&nbsp;🚧 &nbsp;&nbsp;🚨 &nbsp;&nbsp;⚠️
+ ⚠️ &nbsp;&nbsp;🚨 &nbsp;&nbsp;🚧 &nbsp;&nbsp;<a alt="Frederico Reis" href="https://github.com/Fred-Reis/react-native-wmelonapp/raw/main/android/app/build/outputs/apk/release/app-release.apk"> Baixe aqui o arquivo release.apk para testar o app direto no seu dispositivo Android </a> &nbsp;&nbsp;🚧 &nbsp;&nbsp;🚨 &nbsp;&nbsp;⚠️
 </h4>
 
 <br/>
